@@ -17,11 +17,7 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
-    "outDir": "dist",
-    "baseUrl": ".",
-    "paths": {
-      "fix-fetch": ["dist/index.js"]
-    }
+    "outDir": "dist"
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules", "dist"]
