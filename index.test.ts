@@ -1,4 +1,4 @@
-import './index';
+import { fetch as Fetch } from 'fix-fetch';
 import { expect } from 'chai';
 
 it('should be defined globally', () => {
@@ -19,7 +19,6 @@ it('should send a request', async () => {
 });
 
 it('should import fetch fom fix-fetch', async () => {
-  const { fetch } = await import('./index');
-  const response = await fetch('https://httpbin.org/get');
+  const response = await Fetch('https://httpbin.org/get');
   expect(response.status).to.equal(200);
 });
